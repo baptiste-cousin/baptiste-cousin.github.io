@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Baptiste Cousin — Portfolio</title>
+  <meta name="description" content="Portfolio de projets : robotique, drones, mécatronique.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="logo">Baptiste Cousin</a>
+      <nav class="nav">
+        <a href="#projets" data-i18n="nav.projects">Projets</a>
+        <a href="#cv" data-i18n="nav.cv">CV</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="lang" role="group" aria-label="Langue / Language / 言語">
+        <button type="button" data-lang="fr">FR</button>
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="ja">日本語</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- Présentation -->
+    <section class="hero container">
+      <h1>Baptiste Cousin</h1>
+      <p class="role" data-i18n="hero.role">Étudiant ingénieur · Robotique & mécatronique</p>
+      <p class="intro" data-i18n="hero.intro">Je conçois et construis des systèmes robotiques, de la mécanique à l'électronique en passant par le logiciel.</p>
+    </section>
+
+    <!-- Projets -->
+    <section id="projets" class="section container">
+      <h2 data-i18n="projects.title">Projets</h2>
+
+      <div class="grid">
+        <!-- Pour ajouter une photo : mettre le fichier dans images/ avec le nom indiqué dans src -->
+        <article class="card">
+          <div class="thumb"><img src="images/bras-robot.jpg" alt="" loading="lazy" onerror="this.remove()"></div>
+          <div class="card-body">
+            <h3 data-i18n="p1.title">Bras robotique de recherche</h3>
+            <p data-i18n="p1.desc">Bras robot 6 axes basé sur le PAROL6, utilisé comme plateforme de tests et de recherche.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb"><img src="images/drones-fpv.jpg" alt="" loading="lazy" onerror="this.remove()"></div>
+          <div class="card-body">
+            <h3 data-i18n="p2.title">Drones FPV</h3>
+            <p data-i18n="p2.desc">Conception, montage et réglage de drones FPV.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb"><img src="images/servo-essuie-glace.jpg" alt="" loading="lazy" onerror="this.remove()"></div>
+          <div class="card-body">
+            <h3 data-i18n="p3.title">Servomoteur à partir d'un moteur d'essuie-glace</h3>
+            <p data-i18n="p3.desc">Moteur d'essuie-glace de voiture transformé en servomoteur à fort couple.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb"><img src="images/convoyeur.jpg" alt="" loading="lazy" onerror="this.remove()"></div>
+          <div class="card-body">
+            <h3 data-i18n="p4.title">Système de convoyage automatisé</h3>
+            <p data-i18n="p4.desc">Convoyeur automatisé avec gestion du flux de pièces.</p>
+          </div>
+        </article>
+
+        <article class="card upcoming">
+          <div class="thumb"><img src="images/beer-pong.jpg" alt="" loading="lazy" onerror="this.remove()"></div>
+          <div class="card-body">
+            <span class="badge" data-i18n="badge.soon">À venir</span>
+            <h3 data-i18n="p5.title">Robot de beer pong</h3>
+            <p data-i18n="p5.desc">Robot capable de jouer au beer pong de façon autonome.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CV -->
+    <section id="cv" class="section container">
+      <div class="section-head">
+        <h2 data-i18n="cv.title">CV</h2>
+        <a id="cv-link" class="button" href="cv/cv-fr.pdf" target="_blank" rel="noopener" data-i18n="cv.download">Télécharger le CV (PDF)</a>
+      </div>
+
+      <div class="cv-grid">
+        <div>
+          <h3 data-i18n="cv.education">Formation</h3>
+          <ul class="timeline">
+            <li>
+              <span class="when">20XX – 20XX</span>
+              <strong>ESME</strong>
+              <span data-i18n="cv.edu1">Cycle ingénieur</span>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 data-i18n="cv.experience">Expériences</h3>
+          <ul class="timeline">
+            <li>
+              <span class="when">20XX</span>
+              <strong data-i18n="cv.todo">À compléter</strong>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 data-i18n="cv.skills">Compétences</h3>
+          <ul class="tags">
+            <li>ROS</li>
+            <li data-i18n="skill.pcb">Conception PCB</li>
+            <li data-i18n="skill.rt">Systèmes temps réel</li>
+            <li data-i18n="skill.robotics">Robotique</li>
+            <li data-i18n="skill.cad">CAO</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 data-i18n="cv.languages">Langues</h3>
+          <ul class="plain">
+            <li data-i18n="lang.fr">Français — langue maternelle</li>
+            <li data-i18n="lang.en">Anglais</li>
+            <li data-i18n="lang.ja">Japonais</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section container">
+      <h2 data-i18n="contact.title">Contact</h2>
+      <p data-i18n="contact.text">Une question, une opportunité ? N'hésitez pas à me contacter.</p>
+      <ul class="links">
+        <li><a href="mailto:ton.email@exemple.com">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/ton-profil" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/baptiste-cousin" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer container">
+    <p>© <span id="year">2026</span> Baptiste Cousin</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
