@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Baptiste Cousin — Portfolio</title>
-  <meta name="description" content="Portfolio de projets : robotique, drones, mécatronique.">
+  <meta name="description" content="Portfolio de Baptiste Cousin, élève-ingénieur en mécatronique : robotique, convoyage, drones.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -30,54 +30,72 @@
     <!-- Présentation -->
     <section class="hero container">
       <h1>Baptiste Cousin</h1>
-      <p class="role" data-i18n="hero.role">Étudiant ingénieur · Robotique & mécatronique</p>
+      <p class="role" data-i18n="hero.role">Élève-ingénieur en mécatronique · ESME Lyon</p>
       <p class="intro" data-i18n="hero.intro">Je conçois et construis des systèmes robotiques, de la mécanique à l'électronique en passant par le logiciel.</p>
+      <p class="availability" data-i18n="hero.availability">Je recherche un stage de fin d'études de 5 à 6 mois à partir d'avril 2027.</p>
     </section>
 
     <!-- Projets -->
     <section id="projets" class="section container">
       <h2 data-i18n="projects.title">Projets</h2>
 
+      <!-- Pour ajouter une photo : mettre le fichier dans images/ avec le nom indiqué dans src -->
       <div class="grid">
-        <!-- Pour ajouter une photo : mettre le fichier dans images/ avec le nom indiqué dans src -->
-        <article class="card">
+        <article class="card current">
           <div class="thumb"><img src="images/bras-robot.jpg" alt="" loading="lazy" onerror="this.remove()"></div>
           <div class="card-body">
+            <span class="badge" data-i18n="badge.current">En cours</span>
             <h3 data-i18n="p1.title">Bras robotique de recherche</h3>
-            <p data-i18n="p1.desc">Bras robot 6 axes basé sur le PAROL6, utilisé comme plateforme de tests et de recherche.</p>
+            <p class="meta" data-i18n="meta.perso">Projet personnel</p>
+            <p data-i18n="p1.desc">Bras robot 6 axes basé sur le PAROL6, que je construis et programme pour en faire une plateforme de tests et de recherche.</p>
+          </div>
+        </article>
+
+        <article class="card current">
+          <div class="thumb"><img src="images/convoyeur-delta.jpg" alt="" loading="lazy" onerror="this.remove()"></div>
+          <div class="card-body">
+            <span class="badge" data-i18n="badge.current">En cours</span>
+            <h3 data-i18n="p2.title">Convoyeur modulaire à cellules delta</h3>
+            <p class="meta" data-i18n="meta.p2">2026 – 2027 · Projet d'études</p>
+            <p data-i18n="p2.desc">Suite de mon système de convoyage : des cellules delta modulaires qui déplacent les colis dans n'importe quelle direction.</p>
           </div>
         </article>
 
         <article class="card">
-          <div class="thumb"><img src="images/drones-fpv.jpg" alt="" loading="lazy" onerror="this.remove()"></div>
+          <div class="thumb"><img src="images/beer-pong.jpg" alt="" loading="lazy" onerror="this.remove()"></div>
           <div class="card-body">
-            <h3 data-i18n="p2.title">Drones FPV</h3>
-            <p data-i18n="p2.desc">Conception, montage et réglage de drones FPV.</p>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="thumb"><img src="images/servo-essuie-glace.jpg" alt="" loading="lazy" onerror="this.remove()"></div>
-          <div class="card-body">
-            <h3 data-i18n="p3.title">Servomoteur à partir d'un moteur d'essuie-glace</h3>
-            <p data-i18n="p3.desc">Moteur d'essuie-glace de voiture transformé en servomoteur à fort couple.</p>
+            <h3 data-i18n="p3.title">Robot de beer pong autonome</h3>
+            <p class="meta" data-i18n="meta.p3">2024 – 2025 · Équipe de 4</p>
+            <p data-i18n="p3.desc">Robot qui localise les cibles, vise et lance des balles grâce à l'analyse d'image en temps réel.</p>
+            <ul class="tags small"><li>Raspberry Pi</li><li>Fusion 360</li><li>NEMA</li><li data-i18n="tag.vision">Vision</li><li data-i18n="tag.print">Impression 3D</li></ul>
           </div>
         </article>
 
         <article class="card">
           <div class="thumb"><img src="images/convoyeur.jpg" alt="" loading="lazy" onerror="this.remove()"></div>
           <div class="card-body">
-            <h3 data-i18n="p4.title">Système de convoyage automatisé</h3>
-            <p data-i18n="p4.desc">Convoyeur automatisé avec gestion du flux de pièces.</p>
+            <h3 data-i18n="p4.title">Convoyage automatisé pour la restauration</h3>
+            <p class="meta" data-i18n="meta.p4">2025 – 2026 · Projet d'études · Équipe de 3</p>
+            <p data-i18n="p4.desc">Système intelligent qui achemine les plats vers des tables déterminées via un chemin commun.</p>
+            <ul class="tags small"><li>Arduino</li><li>C</li><li>Fusion 360</li><li>NEMA</li><li data-i18n="tag.ui">Interface utilisateur</li></ul>
           </div>
         </article>
 
-        <article class="card upcoming">
-          <div class="thumb"><img src="images/beer-pong.jpg" alt="" loading="lazy" onerror="this.remove()"></div>
+        <article class="card">
+          <div class="thumb"><img src="images/drones-fpv.jpg" alt="" loading="lazy" onerror="this.remove()"></div>
           <div class="card-body">
-            <span class="badge" data-i18n="badge.soon">À venir</span>
-            <h3 data-i18n="p5.title">Robot de beer pong</h3>
-            <p data-i18n="p5.desc">Robot capable de jouer au beer pong de façon autonome.</p>
+            <h3 data-i18n="p5.title">Drones FPV</h3>
+            <p class="meta" data-i18n="meta.perso">Projet personnel</p>
+            <p data-i18n="p5.desc">Construction, assemblage et pilotage de drones FPV.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb"><img src="images/servo-essuie-glace.jpg" alt="" loading="lazy" onerror="this.remove()"></div>
+          <div class="card-body">
+            <h3 data-i18n="p6.title">Servomoteur à partir d'un moteur d'essuie-glace</h3>
+            <p class="meta" data-i18n="meta.perso">Projet personnel</p>
+            <p data-i18n="p6.desc">Moteur d'essuie-glace de voiture transformé en servomoteur à fort couple.</p>
           </div>
         </article>
       </div>
@@ -92,43 +110,57 @@
 
       <div class="cv-grid">
         <div>
+          <h3 data-i18n="cv.experience">Expérience</h3>
+          <ul class="timeline">
+            <li>
+              <span class="when" data-i18n="exp1.when">Juin – sept. 2026 · Stage</span>
+              <strong data-i18n="exp1.title">Ingénieur R&D — Référent technique de plateforme</strong>
+              <span class="where">CyRISBio, Lyon</span>
+              <span class="desc" data-i18n="exp1.desc">Conception et évolution d'une plateforme robotisée d'automatisation pour un grand laboratoire biopharmaceutique : architecture globale, intégration mécanique, électrique et logicielle, système de sécurité, communication TCP/IP et RS-232.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div>
           <h3 data-i18n="cv.education">Formation</h3>
           <ul class="timeline">
             <li>
-              <span class="when">20XX – 20XX</span>
-              <strong>ESME</strong>
-              <span data-i18n="cv.edu1">Cycle ingénieur</span>
+              <span class="when">2024 – 2027 · Lyon</span>
+              <strong data-i18n="edu1.title">Diplôme d'ingénieur — spécialisation mécatronique</strong>
+              <span class="where">ESME</span>
             </li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 data-i18n="cv.experience">Expériences</h3>
-          <ul class="timeline">
             <li>
-              <span class="when">20XX</span>
-              <strong data-i18n="cv.todo">À compléter</strong>
+              <span class="when" data-i18n="edu2.when">2ᵉ semestre 2025 · Japon</span>
+              <strong data-i18n="edu2.title">Échange universitaire</strong>
+              <span class="where">International College of Liberal Arts (iCLA)</span>
+            </li>
+            <li>
+              <span class="when">2022 – 2024 · Saint-Étienne</span>
+              <strong data-i18n="edu3.title">Classe préparatoire MPI</strong>
+              <span class="where" data-i18n="edu3.where">Lycée Claude-Fauriel</span>
             </li>
           </ul>
         </div>
 
-        <div>
+        <div class="span-2">
           <h3 data-i18n="cv.skills">Compétences</h3>
-          <ul class="tags">
-            <li>ROS</li>
-            <li data-i18n="skill.pcb">Conception PCB</li>
-            <li data-i18n="skill.rt">Systèmes temps réel</li>
-            <li data-i18n="skill.robotics">Robotique</li>
-            <li data-i18n="skill.cad">CAO</li>
-          </ul>
+          <dl class="skills">
+            <dt data-i18n="sk.prog">Programmation</dt>
+            <dd><ul class="tags"><li>C</li><li>Python</li><li>OCaml</li><li>C++</li><li>ROS 2</li><li>HTML / CSS / JS</li></ul></dd>
+            <dt data-i18n="sk.robotics">Robotique & systèmes</dt>
+            <dd><ul class="tags"><li>Raspberry Pi</li><li>Arduino</li><li data-i18n="sk.motors">Moteurs NEMA & servos</li><li data-i18n="sk.sensors">Capteurs</li><li data-i18n="tag.vision">Vision</li><li>TCP/IP · RS-232</li></ul></dd>
+            <dt data-i18n="sk.elec">Électronique & prototypage</dt>
+            <dd><ul class="tags"><li data-i18n="sk.pcb">PCB (KiCad, EasyEDA)</li><li data-i18n="sk.solder">Soudure</li><li data-i18n="tag.print">Impression 3D</li><li data-i18n="sk.machining">Usinage</li></ul></dd>
+            <dt data-i18n="sk.cad">CAO & création</dt>
+            <dd><ul class="tags"><li>SolidWorks</li><li>Fusion 360</li><li>Blender</li><li>DaVinci Resolve</li></ul></dd>
+          </dl>
         </div>
 
         <div>
           <h3 data-i18n="cv.languages">Langues</h3>
           <ul class="plain">
             <li data-i18n="lang.fr">Français — langue maternelle</li>
-            <li data-i18n="lang.en">Anglais</li>
-            <li data-i18n="lang.ja">Japonais</li>
+            <li data-i18n="lang.en">Anglais — courant (TOEIC 985/990)</li>
           </ul>
         </div>
       </div>
@@ -137,10 +169,10 @@
     <!-- Contact -->
     <section id="contact" class="section container">
       <h2 data-i18n="contact.title">Contact</h2>
-      <p data-i18n="contact.text">Une question, une opportunité ? N'hésitez pas à me contacter.</p>
+      <p data-i18n="contact.text">Une question, une opportunité de stage ? N'hésitez pas à me contacter.</p>
       <ul class="links">
-        <li><a href="mailto:ton.email@exemple.com">Email</a></li>
-        <li><a href="https://www.linkedin.com/in/ton-profil" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="mailto:baptiste.cousin@gmail.com">baptiste.cousin@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/baptiste-cousin" target="_blank" rel="noopener">LinkedIn</a></li>
         <li><a href="https://github.com/baptiste-cousin" target="_blank" rel="noopener">GitHub</a></li>
       </ul>
     </section>
